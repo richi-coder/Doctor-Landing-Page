@@ -9,9 +9,9 @@
 
 # Sketching:
 
-- SEO
+- SEO important to create personal branding
 - Doctor photo
-- Slogan (for selling the image, branding)
+- Slogan (for selling her image, branding)
 - CTA (call to action)
 - Contact
 - Indirect conversion
