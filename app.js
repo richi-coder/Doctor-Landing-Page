@@ -1,5 +1,21 @@
-let test = document.getElementById("test");
+$(document).ready(function() {
+    $("#test").load(function() {
+        alert("jQuery");
+        $(".placeholder").hide();
+    })
+})
 
-if (test.complete === true) {
-    alert("loaded")
+
+let test = document.getElementById("test");
+let array = Array.from(document.getElementsByClassName("placeholder"));
+
+if (test.complete) {
+    setTimeout(() => {
+        array.forEach(x => {
+            x.remove();
+        });
+        alert("javascript")
+    }, 15000);
+
 }
+//if (test.complete === true) alert("Algo")
