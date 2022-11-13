@@ -1,8 +1,9 @@
-$main-color: rgb(170, 20, 20);
+@use "globals";
 
 * {
-    color: $main-color;
+    color: globals.$main-color;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html {
