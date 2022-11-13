@@ -19,6 +19,7 @@
     <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js" defer></script>
+    <link rel="preload" as="image" href="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1">
 </head>
 <body>
     <header>
@@ -58,21 +59,21 @@
         <h1>Doctora</h1>
         <main class="container-lg border">
             <!-- CAROUSEL-->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="..." loading="lazy">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img id="test" src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="Doctora Raquel Ariza">
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="..." loading="lazy">
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000" class="d-block w-100" alt="Doctora Raquel Ariza">
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="..." loading="lazy">
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://st2.depositphotos.com/3200101/6057/i/450/depositphotos_60575315-stock-photo-portrait-of-young-woman-doctor.jpg" class="d-block w-100" alt="Doctora Raquel Ariza">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -89,7 +90,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
-                    <img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/10/FO-18Oct2018-Dra-Raquel-Ariza-Directora-de-Salud-Colectiva-y-Redes-Corposalud-invita-a-las-mujeres-a-realizarse-examen-de-la-autoexploraci%C3%B3n-mamaria-Corposalud-1.jpeg" class="card-img-top" alt="Saludos">
+                    <img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/10/FO-18Oct2018-Dra-Raquel-Ariza-Directora-de-Salud-Colectiva-y-Redes-Corposalud-invita-a-las-mujeres-a-realizarse-examen-de-la-autoexploraci%C3%B3n-mamaria-Corposalud-1.jpeg" class="card-img-top" alt="Saludos" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Card 1</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -98,7 +99,7 @@
                   </div></div>
                 <div class="col-md-4">
                     <div class="card" aria-hidden="true">
-                        <img src="..." class="card-img-top" alt="..."  style="background:gray">
+                        <img src="" class="card-img-top" alt="alternative"  style="background:gray; aspect-ratio: 4 / 3;" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title placeholder-glow">
                             <span class="placeholder-wave col-6"></span>
@@ -116,7 +117,7 @@
                       </div>    </div>
                   <div class="col-md-4">
                     <div class="card" style="width: 18rem;">
-                    <img id="test" src="http://www.tachira.gob.ve/wp-content/uploads/2014/09/Dra.-Raquel-Ariza.jpg" class="card-img-top" alt="Saludos">
+                    <img src="http://www.tachira.gob.ve/wp-content/uploads/2014/09/Dra.-Raquel-Ariza.jpg" class="card-img-top" alt="Saludos" loading="lazy">
                     <div class="card-body">
                       <h5 class="card-title">Card 3</h5>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eius sint qui amet doloremque similique. A, nam. Magnam, ipsam nulla?</p>

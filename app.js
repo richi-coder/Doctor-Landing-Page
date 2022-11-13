@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    $("#test").load(function() {
-        alert("jQuery");
-        $(".placeholder").hide();
-    })
+    $( "#test" ).load( "http://www.tachira.gob.ve/wp-content/uploads/2014/09/Dra.-Raquel-Ariza.jpg", function() {
+        $(".placeholder").fadeOut();
+        
+      });
 })
 
-
+/*
 let test = document.getElementById("test");
 let array = Array.from(document.getElementsByClassName("placeholder"));
 
@@ -14,8 +14,6 @@ if (test.complete) {
         array.forEach(x => {
             x.remove();
         });
-        alert("javascript")
-    }, 15000);
+    }, 2000);
 
-}
-//if (test.complete === true) alert("Algo")
+}*/
