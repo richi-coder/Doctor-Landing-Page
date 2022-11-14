@@ -22,6 +22,11 @@ body {
   font-family: "Marck Script", cursive;
 }
 
+.card-img-top {
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
 .transparent {
   width: 100%;
   position: relative;
