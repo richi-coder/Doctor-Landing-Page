@@ -16,6 +16,14 @@ body {
     overflow-x: clip;
 }
 
+.carousel {
+    padding-top: 70px;
+}
+
+.navbar-brand {
+    font-family: globals.$logo-font;
+}
+
 .transparent {
     width: 100%;
     position: relative;
