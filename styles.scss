@@ -15,6 +15,29 @@ body {
     padding: 0;
     overflow-x: clip;
 }
+
+.transparent {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background: linear-gradient(0, white, rgba(255,255,255,0.5));
+}
+
+.box {
+    height: 200px;
+    color: white;
+    &:nth-of-type(1) {
+        background-color: rgba(29,175,237,0.95);
+    }
+    &:nth-of-type(2) {
+        background-color: rgba(17,115,185,0.95);
+    }
+    &:nth-of-type(3) {
+        background-color: rgba(59,205,231,0.95);
+    }
+}
 /*
 header {
     position: fixed;
