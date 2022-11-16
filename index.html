@@ -38,17 +38,17 @@
                     <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE MÍ</a>
+                    <a class="nav-link" href="#sobre-mi">SOBRE MÍ</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SERVICIOS
+                    <a class="nav-link dropdown-toggle" href="#ministerio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MINISTERIO
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#action">Action</a></li>
-                      <li><a class="dropdown-item" href="#another">Another action</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#entrevistas">Entrevistas</a></li>
+                      <li><a class="dropdown-item" href="#jornadas">Jornadas</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#some">Something else here</a></li>
+<!--                      <li><a class="dropdown-item" href="#some"></a></li>-->
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -61,7 +61,7 @@
         </header>
         <main>
             <!-- CAROUSEL-->
-            <div class="container-fluid carousel" style="padding: 0;">
+            <div class="container-fluid carousel cont" style="padding: 0;">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <!--
                     <div class="carousel-indicators">
@@ -73,12 +73,27 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="5000">
                         <img id="test" src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="Doctora Raquel Ariza CORPOSALUD">
+                        <div class="hero-text" style="color:white">
+                          <h1 class="display-1 fw-bold">DRA. <br> RAQUEL ARIZA</h1>
+                          <p>A su servicio!</p>
+                          <button>Contáctame!</button>
+                        </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000" class="d-block w-100" alt="Doctora Raquel Ariza">
+                        <div class="hero-text">
+                          <h1 class="display-1 fw-bold">Dra. <br> Raquel Ariza</h1>
+                          <p>Directora Regional de Salud Ambiental</p>
+                          <button>Contáctame!</button>
+                        </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="media/Doctora_Flores-removebg-preview - Copy.png" class="d-block w-100" alt="Doctora Raquel Ariza">
+                        <div class="hero-text">
+                          <h1 class="display-1 fw-bold">Dra. <br> Raquel Ariza</h1>
+                          <p>Médico Cirujano</p>
+                          <button>Contáctame!</button>
+                        </div>
                       </div>
                     </div>
                     <!--
@@ -96,7 +111,7 @@
             </div>
             <!-- CAROUSEL-->
             <!-- BOXES-->
-            <div class="container-fluid">
+            <div class="container-fluid neg-marg">
               <div class="row">
                 <div class="col-lg-3 box">aqui</div>
                 <div class="col-lg-5 box">va</div>
@@ -104,13 +119,30 @@
               </div>
             </div>
             <!-- BOXES-->
-            <!-- GRID CARDS-->
-            <div class="container-fluid">
-              <h2 class="display-1">Entrevistas</h2>
+            <!-- SOBRE MI-->
+            <div class="container-fluid pad" id="sobre-mi">
               <div class="row">
-                  <!-- /----/-->
+                <div class="col-lg-6">
+                  <img src="https://demo.joomshaper.com/2016/doctor/images/2016/09/09/home-doctor.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-center justify-content-evenly">
+                  <h2 class="display-2 fw-semibold">SOBRE MÍ</h2>
+                  <p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum soluta laudantium in consequuntur quaerat dolorem autem eveniet tempora. Magni dolores odio mollitia illo ex quis! Autem, deleniti, illo quo molestiae tempora, in dolore iusto voluptatibus voluptates eligendi odit repudiandae sint animi necessitatibus consequatur omnis. Reiciendis dicta provident numquam rerum?</p>
+                  <p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum soluta laudantium in consequuntur quaerat dolorem autem eveniet tempora. Magni dolores odio mollitia illo ex quis! Autem, deleniti, illo quo molestiae tempora, in dolore iusto voluptatibus voluptates eligendi odit repudiandae sint animi necessitatibus consequatur omnis. Reiciendis dicta provident numquam rerum?</p>
+                </div>
+              </div>
+            </div>
+            <!-- SOBRE MI-->
+            <!-- GRID CARDS-->
+            <div class="container-fluid pad" id="ministerio">
+              <h1 class="display-1 text-center fw-semibold">MINISTERIO</h1>
+              <p class="lead text-start" id="entrevistas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis dicta labore tenetur perferendis odio natus sunt iste non illo necessitatibus. Ducimus aperiam illum, facere suscipit recusandae perspiciatis rem obcaecati hic quia sed consequuntur, at porro iste libero nobis odio fugit? Quos, commodi veniam nesciunt facere repellendus non? Nemo ipsum veniam nisi, excepturi cum id facilis velit numquam perspiciatis! Deleniti omnis corrupti tenetur nam amet, ad sapiente velit quis! Omnis, quasi, doloremque obcaecati unde exercitationem ex explicabo enim ratione velit ea veniam similique odit quidem fugiat nam eaque optio, perspiciatis eveniet rerum placeat ab perferendis. Qui a at ipsa tempore esse.</p>
+              <h2 class="display-1">Entrevistas</h2>
+              <p class="lead text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia iusto ipsum sapiente temporibus cumque a numquam totam, aut similique nesciunt!</p>
+              <div class="row">
+                  <!-- /----/ FIRST-->
                   <div class="col-md-4">
-                    <div class="card show" style="width: 18rem; display: none;">
+                    <div class="card showup" style="width: 18rem; display: none;">
                       <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
                       <div class="card-body">
                         <h5 class="card-title">Consulta de mama</h5>
@@ -135,9 +167,9 @@
                       </div>
                     </div>
                   </div>
-                  <!-- /----/-->
+                  <!-- /----/SECOND-->
                   <div class="col-md-4">
-                    <div class="card show" style="width: 18rem; display: none;">
+                    <div class="card showup" style="width: 18rem; display: none;">
                       <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD"></a>
                       <div class="card-body">
                         <h5 class="card-title">Toma de citología</h5>
@@ -162,9 +194,9 @@
                       </div>
                     </div>
                   </div>
-                  <!-- /----/-->
+                  <!-- /----/THIRD-->
                   <div class="col-md-4">
-                    <div class="card show" style="width: 18rem; display: none;">
+                    <div class="card showup" style="width: 18rem; display: none;">
                       <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" target="_blank"><img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?resize=696%2C463&ssl=1" class="card-img-top" alt="Doctora Raquel Ariza Reactivos Jornadas Despistaje Cancer"></a>
                       <div class="card-body">
                         <h5 class="card-title">No hay reactivos ni kit de espéculos para jornadas de despistaje de cáncer</h5>
@@ -192,10 +224,16 @@
                   <!-- /----/-->
               </div>
               <!-- /----/-->
+              <p class="text-center">
+                <a id="ver-mas" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <span id="ver-mas-loader" class="spinner-border spinner-border-sm mostrar" role="status" aria-hidden="true"></span>Ver más
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample" data-bs-parent="#accordion">
               <div class="row">
-                <!-- /----/-->
+                <!-- /----/FOURTH-->
                 <div class="col-md-4">
-                  <div class="card show" style="width: 18rem; display: none;">
+                  <div class="card showup" style="width: 18rem; display: none;">
                     <a href="http://corposaludtachira.gob.ve/?p=4462" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/03/FO-30MAR2018-Raquel-Ariza-prevenci%C3%B3n-del-c%C3%A1ncer-de-colon-2-1-1024x576.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
                     <div class="card-body">
                       <h5 class="card-title">“Evitar una vida sedentaria y adquirir buenos hábitos alimenticios contribuyen a la prevención del cáncer de colon”</h5>
@@ -220,9 +258,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- /----/-->
+                <!-- /----/FIFTH-->
                 <div class="col-md-4">
-                  <div class="card show" style="width: 18rem; display: none;">
+                  <div class="card showup" style="width: 18rem; display: none;">
                     <a href="http://corposaludtachira.gob.ve/?p=4838" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/05/FO-17May2018-Dr-Luis-Ramirez-Presidente-de-Corposalud-Con-botones-y-reconocimientos-Corposalud-realza-labor-de-los-enfermeros-Corposalud-3.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
                     <div class="card-body">
                       <h5 class="card-title">Con botones y reconocimientos Corposalud realza labor de los enfermeros</h5>
@@ -247,9 +285,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- /----/-->
+                <!-- /----/SIXTH-->
                 <div class="col-md-4">
-                  <div class="card show" style="width: 18rem; display: none;">
+                  <div class="card showup" style="width: 18rem; display: none;">
                     <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" target="_blank"><img src="https://diariodelosandes.com/site/wp-content/uploads/2018/12/FO07DIC2018Corposalud-recibio-gran-dotaci%C3%B3n-de-medicamentos-640x480.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
                     <div class="card-body">
                       <h5 class="card-title">Programas de Corposalud recibieron dotación de medicamentos por parte de MPPS</h5>
@@ -274,9 +312,18 @@
                     </div>
                   </div>
                 </div>
+              </div>
                 <!-- /----/-->
-            </div>
             <!-- GRID CARDS-->
+          </div>
+          <div class="container-fluid pad" id="jornadas">
+            <h2 class="display-1">Jornadas</h2>
+            <p class="lead text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ratione velit placeat iusto explicabo necessitatibus, eum voluptate hic quae sed molestiae, quasi iure aliquid facere voluptatem culpa. Libero ad accusamus, fuga, numquam quae quo voluptate fugit consequatur incidunt tempore minima.</p>
+            <p class="text-center display-4">Próximas jornadas:</p>
+            <img src="media/NOVIEMBRE.png" class="img-fluid" alt="" style="padding: 50px 100px">
+          </div>
+            
+            
         </main>
     <!--
         - USAR ALT ATTRIBUTE EN IMGS y tambien TITLE

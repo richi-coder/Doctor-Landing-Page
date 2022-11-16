@@ -1,10 +1,13 @@
 $(document).ready(function() {
   $(window).on("load", function () {
     $(".layer").fadeOut();
-    $(".show").fadeIn();
+    $(".showup").fadeIn();
   });
   $(".navbar-brand").click(function() {
     location.reload();
+  });
+  $("#ver-mas").click(function() {
+    $("#ver-mas-loader").toggleClass("mostrar");
   })
 }); 
 /*

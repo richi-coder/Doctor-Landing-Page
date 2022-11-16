@@ -20,13 +20,55 @@ body {
     padding-top: 70px;
 }
 
+.d-block {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.neg-marg {
+    margin-top: -10vw;
+}
+
+.pad {
+    padding-top: 70px;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    color: rgb(56, 56, 56);
+    z-index: 2;
+  }
+
 .navbar-brand {
     font-family: globals.$logo-font;
+}
+
+.nav-link {
+    border-radius: 3px;
+}
+
+.nav-link:hover {
+    background-color: rgba(17,115,185,0.95);
+    transition: all 0.7s ease-in-out;
+    color: white !important;
+    transform: scale(1,1.2)
+}
+
+.mostrar {
+    visibility: hidden;
 }
 
 .card-img-top {
     object-fit: cover;
     aspect-ratio: 4 / 3;
+}
+
+.lead {
+    padding: 20px 40px 0px;
 }
 
 .transparent {
@@ -35,13 +77,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-95%);
-    height: 200px;
+    height: 15vw;
     background: linear-gradient(0, rgba(255,255,255,1), rgba(255, 255, 255, 0.5), rgba(255,255,255,0));
-    z-index: 5;
+    z-index: 1;
 }
 
 .box {
-    height: 200px;
+    height: 300px;
     color: white;
     &:nth-of-type(1) {
         background-color: rgba(29,175,237,0.95);
@@ -53,31 +95,3 @@ body {
         background-color: rgba(59,205,231,0.95);
     }
 }
-/*
-header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    nav {
-        position: relative;
-        top: 0%;
-        left: 60%;
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-            li {
-                color: white;
-                margin: 0;
-                padding: 0;
-                a {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-*/
