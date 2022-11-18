@@ -18,6 +18,10 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+.portada {
+  visibility: hidden;
+}
+
 .carousel {
   padding-top: 70px;
 }
