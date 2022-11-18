@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctora Raquel Ariza | Médico Cirujano | Táchira</title>
     <!-- Debo cambiar este script por uno propio para CRISP-->
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1fac7013-6087-4f81-bba6-7d79e88a922e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!--<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1fac7013-6087-4f81-bba6-7d79e88a922e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
     <!-- Debo añadir aquí la URL doctoraraquelariza.com, esta es la MASTER URL-->
     <link rel="canonical" href="doctoraraquelariza.com"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Falta logo favicon pestaña, depende de logo-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css"> <!-- Bootstrap folder css-->
@@ -27,18 +30,18 @@
     <script src="app.js" defer></script>
     <link rel="preload" as="image" href="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header>
         <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand fs-1" href="">DRA. <span class="fw-bold">RAQUEL ARIZA</span></a>
+              <a class="navbar-brand fs-6" href="">DRA. <span class="fw-bolder">RAQUEL ARIZA</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    <a class="nav-link active" aria-current="page" href="#inicio">INICIO</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#sobre-mi">SOBRE MÍ</a>
@@ -64,7 +67,7 @@
         </header>
         <main>
             <!-- CAROUSEL-->
-            <div class="container-fluid carousel cont" style="padding: 0;">
+            <div class="container-fluid carousel cont" style="padding: 0;" id="inicio">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <!--
                     <div class="carousel-indicators">
@@ -75,27 +78,27 @@
                     -->
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="5000">
-                        <img id="test" src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="Doctora Raquel Ariza CORPOSALUD">
-                        <div class="hero-text" style="color:white">
-                          <h1 class="display-1 fw-bold">DRA. <br> RAQUEL ARIZA</h1>
-                          <p>A su servicio!</p>
-                          <button>Contáctame!</button>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <img src="https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000" class="d-block w-100" alt="Doctora Raquel Ariza">
-                        <div class="hero-text">
-                          <h1 class="display-1 fw-bold">Dra. <br> Raquel Ariza</h1>
-                          <p>Directora Regional de Salud Ambiental</p>
-                          <button>Contáctame!</button>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
                         <img src="media/Doctora_Flores-removebg-preview - Copy.png" class="d-block w-100" alt="Doctora Raquel Ariza">
+                        <div class="hero-text" style="color:white">
+                          <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
+                          <p class="desc">Médico Internista - Directora General de Salud Ambiental</p>
+                          <button class="contactame">CONTÁCTAME!</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000" class="d-block w-100" alt="Doctora Raquel Ariza" loading="lazy">
                         <div class="hero-text">
-                          <h1 class="display-1 fw-bold">Dra. <br> Raquel Ariza</h1>
-                          <p>Médico Cirujano</p>
-                          <button>Contáctame!</button>
+                          <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
+                          <p class="desc">Directora Regional de Salud Ambiental</p>
+                          <button class="contactame">CONTÁCTAME!</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img id="test" src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="Doctora Raquel Ariza CORPOSALUD" loading="lazy">
+                        <div class="hero-text">
+                          <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
+                          <p class="desc">Médico Cirujano</p>
+                          <button class="contactame">CONTÁCTAME!</button>
                         </div>
                       </div>
                     </div>
@@ -116,22 +119,31 @@
             <!-- BOXES-->
             <div class="container-fluid neg-marg">
               <div class="row">
-                <div class="col-lg-3 box">aqui</div>
-                <div class="col-lg-5 box">va</div>
-                <div class="col-lg-4 box">info</div>
+                <div class="col-lg-4 box mt-4 p-5 bg-primary text-white">
+                  <h1 class="text-white">AGENDA UNA CITA</h1>
+                  <p>Lorem ipsum...</p>
+                </div>
+                <div class="col-lg-4 box mt-4 p-5 bg-primary text-white">
+                  <h1 class="text-white">EMERGENCIAS</h1>
+                  <p>Lorem ipsum...</p>
+                </div>
+                <div class="col-lg-4 box mt-4 p-5 bg-primary text-white">
+                  <h1 class="text-white">CONFERENCIAS</h1>
+                  <p>Lorem ipsum...</p>
+                </div>
               </div>
             </div>
             <!-- BOXES-->
             <!-- SOBRE MI-->
             <div class="container-fluid pad" id="sobre-mi">
               <div class="row">
-                <div class="col-lg-6">
-                  <img src="https://demo.joomshaper.com/2016/doctor/images/2016/09/09/home-doctor.png" class="img-fluid" alt="">
-                </div>
                 <div class="col-lg-6 d-flex flex-column align-items-center justify-content-evenly">
                   <h2 class="display-2 fw-semibold">SOBRE MÍ</h2>
                   <p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum soluta laudantium in consequuntur quaerat dolorem autem eveniet tempora. Magni dolores odio mollitia illo ex quis! Autem, deleniti, illo quo molestiae tempora, in dolore iusto voluptatibus voluptates eligendi odit repudiandae sint animi necessitatibus consequatur omnis. Reiciendis dicta provident numquam rerum?</p>
                   <p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum soluta laudantium in consequuntur quaerat dolorem autem eveniet tempora. Magni dolores odio mollitia illo ex quis! Autem, deleniti, illo quo molestiae tempora, in dolore iusto voluptatibus voluptates eligendi odit repudiandae sint animi necessitatibus consequatur omnis. Reiciendis dicta provident numquam rerum?</p>
+                </div>
+                <div class="col-lg-6">
+                  <img src="https://demo.joomshaper.com/2016/doctor/images/2016/09/09/home-doctor.png" class="img-fluid" alt="" loading="lazy">
                 </div>
               </div>
             </div>
@@ -146,7 +158,7 @@
                   <!-- /----/ FIRST-->
                   <div class="col-md-4">
                     <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
+                      <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
                       <div class="card-body">
                         <h5 class="card-title">Consulta de mama</h5>
                         <p class="card-text">Corposalud invita a las mujeres a realizarse examen de la autoexploración mamaria.</p>
@@ -173,7 +185,7 @@
                   <!-- /----/SECOND-->
                   <div class="col-md-4">
                     <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD"></a>
+                      <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD" loading="lazy"></a>
                       <div class="card-body">
                         <h5 class="card-title">Toma de citología</h5>
                         <p class="card-text">Promueven la toma de citología para la detección precoz del cáncer de cuello uterino.</p>
@@ -200,7 +212,7 @@
                   <!-- /----/THIRD-->
                   <div class="col-md-4">
                     <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" target="_blank"><img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?resize=696%2C463&ssl=1" class="card-img-top" alt="Doctora Raquel Ariza Reactivos Jornadas Despistaje Cancer"></a>
+                      <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" target="_blank"><img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?resize=696%2C463&ssl=1" class="card-img-top" alt="Doctora Raquel Ariza Reactivos Jornadas Despistaje Cancer" loading="lazy"></a>
                       <div class="card-body">
                         <h5 class="card-title">No hay reactivos ni kit de espéculos para jornadas de despistaje de cáncer</h5>
                         <p class="card-text">En el estado Táchira se cuenta con programas que ayudan al pacientes a prevenir y tratar el cáncer, en sus distintos estadíos.</p>
@@ -228,16 +240,15 @@
               </div>
               <!-- /----/-->
               <p class="text-center">
-                <a id="ver-mas" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  <span id="ver-mas-loader" class="spinner-border spinner-border-sm mostrar" role="status" aria-hidden="true"></span>Ver más
-                </a>
+                <a id="ver-mas" class="btn btn-info btn-lg w-50 mt-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" type="button">Ver más entrevistas</a>
+                <span id="ver-mas-loader" class="spinner-border spinner-border-sm mostrar" role="status" aria-hidden="true"></span>
               </p>
               <div class="collapse" id="collapseExample" data-bs-parent="#accordion">
               <div class="row">
                 <!-- /----/FOURTH-->
                 <div class="col-md-4">
                   <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="http://corposaludtachira.gob.ve/?p=4462" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/03/FO-30MAR2018-Raquel-Ariza-prevenci%C3%B3n-del-c%C3%A1ncer-de-colon-2-1-1024x576.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
+                    <a href="http://corposaludtachira.gob.ve/?p=4462" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/03/FO-30MAR2018-Raquel-Ariza-prevenci%C3%B3n-del-c%C3%A1ncer-de-colon-2-1-1024x576.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
                     <div class="card-body">
                       <h5 class="card-title">“Evitar una vida sedentaria y adquirir buenos hábitos alimenticios contribuyen a la prevención del cáncer de colon”</h5>
                       <p class="card-text">... Raquel Ariza, adjunta al programa de Control y Prevención de Cáncer de la Corporación de Salud del Estado, aprovechó la oportunidad para hacer un llamado a la prevención de esta enfermedad a partir de las mejoras en los hábitos alimenticios, ingesta de agua adecuada, evitar el estreñimiento, y hacer ejercicios.</p>
@@ -264,7 +275,7 @@
                 <!-- /----/FIFTH-->
                 <div class="col-md-4">
                   <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="http://corposaludtachira.gob.ve/?p=4838" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/05/FO-17May2018-Dr-Luis-Ramirez-Presidente-de-Corposalud-Con-botones-y-reconocimientos-Corposalud-realza-labor-de-los-enfermeros-Corposalud-3.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
+                    <a href="http://corposaludtachira.gob.ve/?p=4838" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/05/FO-17May2018-Dr-Luis-Ramirez-Presidente-de-Corposalud-Con-botones-y-reconocimientos-Corposalud-realza-labor-de-los-enfermeros-Corposalud-3.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
                     <div class="card-body">
                       <h5 class="card-title">Con botones y reconocimientos Corposalud realza labor de los enfermeros</h5>
                       <p class="card-text">El acto estuvo presidido por el Presidente de Corposalud, doctor Luís Ramírez, en compañía de David Omaña  y Raquel Ariza, director principal y jefe de Salud colectiva y redes, Yraima Guerrero, coordinadora regional de enfermería y Daniel Lizcano, presidente del Colegio de Enfermeros del Táchira.</p>
@@ -291,7 +302,7 @@
                 <!-- /----/SIXTH-->
                 <div class="col-md-4">
                   <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" target="_blank"><img src="https://diariodelosandes.com/site/wp-content/uploads/2018/12/FO07DIC2018Corposalud-recibio-gran-dotaci%C3%B3n-de-medicamentos-640x480.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud"></a>
+                    <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" target="_blank"><img src="https://diariodelosandes.com/site/wp-content/uploads/2018/12/FO07DIC2018Corposalud-recibio-gran-dotaci%C3%B3n-de-medicamentos-640x480.jpg" class="card-img-top" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
                     <div class="card-body">
                       <h5 class="card-title">Programas de Corposalud recibieron dotación de medicamentos por parte de MPPS</h5>
                       <p class="card-text">La doctora Raquel Ariza, jefe de Salud Colectiva y Redes de Corposalud declaró sentirse satisfecha por esta gran dotación de medicamentos, que serán distribuidos de la mejor manera entre los pacientes que lo necesitan “ya que es vital para la vida de ellos”.</p>
@@ -323,7 +334,7 @@
             <h2 class="display-1">Jornadas</h2>
             <p class="lead text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ratione velit placeat iusto explicabo necessitatibus, eum voluptate hic quae sed molestiae, quasi iure aliquid facere voluptatem culpa. Libero ad accusamus, fuga, numquam quae quo voluptate fugit consequatur incidunt tempore minima.</p>
             <p class="text-center display-4 fw-normal">PRÓXIMAS <span class="fw-bold">JORNADAS</span></p>
-            <img src="media/NOVIEMBRE.png" class="img-fluid" alt="" style="padding: 5vw 10vw 10vw">
+            <img src="media/NOVIEMBRE.png" class="img-fluid" alt="" style="padding: 5vw 10vw 10vw" loading="lazy">
           </div>
             
             
