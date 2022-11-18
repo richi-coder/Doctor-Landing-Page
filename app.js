@@ -1,7 +1,12 @@
 $(document).ready(function() {
-  $(window).on("load", function () {
+  $("#about-me").on("load", function() {
+    $(".layer-sobremi").fadeOut();
+    console.log("sobre mi OK")
+  })
+  $(".picture1").on("load", function() {
     $(".layer").fadeOut();
     $(".showup").fadeIn();
+    console.log("loaded")
   });
   $(".navbar-brand").click(function() {
     location.reload();
@@ -20,3 +25,4 @@ new PerformanceObserver((entryList) => {
     console.log('LCP candidate:', entry.startTime, entry);
   }
 }).observe({type: 'largest-contentful-paint', buffered: true});
+
