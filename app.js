@@ -46,6 +46,7 @@ $(document).ready(function() {
 document.fonts.ready.then(() => {
   if(document.getElementById("first-image").complete === true) {
     document.querySelector(".portada").classList.add("animate");
+    $(document.body).removeAttr("style");
     $(".loading-bar").fadeOut();
     setTimeout(() => {
       document.getElementById("second-image").src = "https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000";
@@ -68,7 +69,7 @@ document.fonts.ready.then(() => {
     $(".loading-bar").fadeIn();
     setTimeout(() => {
       $(".loading-bar").fadeOut();
-    }, 3000);
+    }, 5000);
   })
   
   window.onscroll = function() {scrollBar()};
