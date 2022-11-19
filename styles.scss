@@ -18,6 +18,41 @@ body {
 
 header {
     background-color: rgba(255,255,255,1);
+    
+}
+
+.navbar {
+    animation: entrance 2.5s linear 1;
+}
+
+@keyframes entrance {
+    0% {top: -100%}
+}
+
+.loading-bar {
+    background-color: rgb(104, 104, 104);
+    width: 70%;
+    height: 3.5px;
+    position: fixed;
+    top: 3.4em;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 99999;
+    border-radius: 5px;
+    animation: loading 2.5s ease-in-out infinite;
+}
+@keyframes loading {
+    0% {transform: translate(-200%,0);}
+    100% {transform: translate(200%,0);}
+}
+
+.scrolling-bar {
+    background-color: rgb(56,56,56);
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    top: 3.4em;
+    left: 0%;
 }
 
 .portada {
@@ -27,7 +62,16 @@ header {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 4;
 }
+.animate {
+    animation: animate 2s linear 1;
+}
+@keyframes animate {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 .portada-img {
     background-color: gray;
     position: absolute;
@@ -56,7 +100,7 @@ header {
 }
 
 .carousel {
-    padding-top: 70px;
+    padding-top: 3.7em;
 }
 
 .d-block {
@@ -89,6 +133,7 @@ header {
     color:rgb(56, 56, 56);
     text-align: left;
     font-style: italic;
+    font-weight: 600;
 }
 
 .contactame {
@@ -104,7 +149,7 @@ header {
 
 h1, h2, span, .navbar-brand {
     font-family: globals.$logo2-font;
-    color: rgb(63, 63, 63)
+    color: rgb(63, 63, 63);
 }
 
 span {
@@ -117,7 +162,7 @@ span {
 }
 
 .nav-link:hover {
-    background-color: rgba(17,115,185,0.95);
+    background-color: rgba(29,175,237,0.95);
     transition: all 0.7s ease-in-out;
     color: white !important;
     transform: scale(1,1.1);
@@ -171,7 +216,13 @@ span {
 
 @media only screen and (max-width: 600px) {
     .d-block {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 9 / 18;
+        object-position: 22% 0%;
     }
-  
+    .desc, .hero-text h1, .hero-text h1 span {
+        color: white;
+    }
+    .hero-text {
+        transform: translate(0%,10%);
+    }
 }

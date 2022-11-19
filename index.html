@@ -27,12 +27,12 @@
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css"> <!-- Bootstrap folder css-->
     <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script> <!-- Bootstrap folder js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js" async></script>
+    <script src="app.js" defer></script>
     <link rel="preload" as="image" href="media/Doctora_Flores-removebg-preview - Copy.png">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white">
             <div class="container-fluid">
               <a class="navbar-brand fs-6" href="">DRA. <span class="fw-bolder">RAQUEL ARIZA</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,9 @@
                 </ul>
               </div>
             </div>
+            <div class="scrolling-bar" id="myBar"></div>
           </nav>
+          <div class="loading-bar" style="display:none;"></div>
         </header>
         <main>
             <!-- CAROUSEL-->
@@ -77,17 +79,17 @@
                     </div>
                     -->
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="5000">
+                      <div class="carousel-item active" data-bs-interval="10000">
                         <img src="media/Doctora_Flores-removebg-preview - Copy.png" class="d-block w-100" alt="Doctora Raquel Ariza" id="first-image">
                         <div class="portada"></div>
                         <div class="hero-text" style="color:white">
                           <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
-                          <p class="desc">Médico Internista - Directora General de Salud Ambiental</p>
+                          <p class="desc">Médico Cirujano - Directora General de Salud Ambiental</p>
                           <button class="contactame">CONTÁCTAME!</button>
                         </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
-                        <img src="https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000" class="d-block w-100" alt="Doctora Raquel Ariza" loading="lazy">
+                        <img class="d-block w-100" alt="Doctora Raquel Ariza" id="second-image">
                         <div class="hero-text">
                           <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
                           <p class="desc">Directora Regional de Salud Ambiental</p>
@@ -95,7 +97,7 @@
                         </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
-                        <img id="test" src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?fit=1936%2C1288&ssl=1" class="d-block w-100" alt="Doctora Raquel Ariza CORPOSALUD" loading="lazy">
+                        <img class="d-block w-100" alt="Doctora Raquel Ariza CORPOSALUD" id="third-image">
                         <div class="hero-text">
                           <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
                           <p class="desc">Médico Cirujano</p>
@@ -168,8 +170,8 @@
                     <div class="card showup" style="width: 18rem;">
                       <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy" style="background:white;" id="last-img"><div class="portada-img"></div></a>
                       <div class="card-body">
-                        <h5 class="card-title">Consulta de mama</h5>
-                        <p class="card-text">Corposalud invita a las mujeres a realizarse examen de la autoexploración mamaria.</p>
+                        <h5 class="card-title">Corposalud invita a las mujeres a realizarse examen de la autoexploración mamaria</h5>
+                        <p class="card-text">La Doctora Raquel Ariza, adjunta del programa de Cáncer y directora de Salud Colectiva y Redes de la Corporación de Salud del Táchira, precisó que el cáncer de mama es una patología frecuente en las mujeres de cualquier edad, pero ...</p>
                         <a href="http://corposaludtachira.gob.ve/?p=5646" class="btn btn-primary" target="_blank">Ver artículo</a>
                       </div>
                     </div>
@@ -197,8 +199,8 @@
                     <div class="card showup" style="width: 18rem;">
                       <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD" loading="lazy"><div class="portada-img"></div></a>
                       <div class="card-body">
-                        <h5 class="card-title">Toma de citología</h5>
-                        <p class="card-text">Promueven la toma de citología para la detección precoz del cáncer de cuello uterino.</p>
+                        <h5 class="card-title">Promueven la toma de citología para la detección precoz del cáncer de cuello uterino</h5>
+                        <p class="card-text">Según la doctora Raquel Ariza, el trabajo de toma de citologías para el despistaje de cáncer de cuello uterino ha decaído en algunos distritos, razón por la que resulta necesario que se tomen medidas y se pueda fortalecer otra vez esta ...</p>
                         <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" class="btn btn-primary" target="_blank">Ver artículo</a>
                       </div>
                     </div>
@@ -255,7 +257,6 @@
               <!-- /----/-->
               <p class="text-center">
                 <a id="ver-mas" class="btn btn-info btn-lg w-50 mt-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" type="button">Ver más entrevistas</a>
-                <span id="ver-mas-loader" class="spinner-border spinner-border-lg mostrar" role="status" aria-hidden="true"></span>
               </p>
               <div class="collapse" id="collapseExample" data-bs-parent="#accordion">
               <div class="row">
