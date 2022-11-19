@@ -6,8 +6,23 @@ $(document).ready(function() {
     
   });
 
-  $("#last-img").on("load", function() {
-    $(".portada-img").fadeOut();
+  $("#img-1").on("load", function() {
+    $(".portada-1").fadeOut();
+  })
+  $("#img-2").on("load", function() {
+    $(".portada-2").fadeOut();
+  })
+  $("#img-3").on("load", function() {
+    $(".portada-3").fadeOut();
+  })
+  $("#img-4").on("load", function() {
+    $(".portada-4").fadeOut();
+  })
+  $("#img-5").on("load", function() {
+    $(".portada-5").fadeOut();
+  })
+  $("#img-6").on("load", function() {
+    $(".portada-6").fadeOut();
   })
 
   $(".navbar-brand").click(function() {
@@ -31,10 +46,9 @@ $(document).ready(function() {
 document.fonts.ready.then(() => {
   if(document.getElementById("first-image").complete === true) {
     document.querySelector(".portada").classList.add("animate");
-      
+    $(".loading-bar").fadeOut();
     setTimeout(() => {
       document.getElementById("second-image").src = "https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000";
-      $(".loading-bar").fadeOut();
     }, 2000);
   }
 });
@@ -48,7 +62,13 @@ document.fonts.ready.then(() => {
 
   document.querySelector(".portada").addEventListener("animationend", (e) => {
     document.querySelector(".portada").style.display = "none";
-    console.log("perfect")
+  })
+
+  document.querySelector(".navbar").addEventListener("animationend", () => {
+    $(".loading-bar").fadeIn();
+    setTimeout(() => {
+      $(".loading-bar").fadeOut();
+    }, 3000);
   })
   
   window.onscroll = function() {scrollBar()};
