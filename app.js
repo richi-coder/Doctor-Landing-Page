@@ -24,11 +24,11 @@ $(document).ready(function() {
   });
 
   $(".nov").on("load", function() {
-    console.log("noviembre")
+    $(".jornada-img").fadeOut();
   })
-  
+
   $("#first-image").on("load", function() {
-    alert("run")
+    $(".portada").fadeOut();
   })
 
 }); 

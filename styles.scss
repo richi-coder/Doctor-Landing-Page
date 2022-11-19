@@ -38,6 +38,17 @@ header {
     border-radius: 5px;
     animation: color-load 1.5s ease-in-out infinite;
 }
+.jornada-img {
+    background-color: gray;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    animation: color-load 1.5s ease-in-out infinite;
+}
 @keyframes color-load {
     0% {background-color:gray;}
     50% {background-color: rgb(17,115,185);}
