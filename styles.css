@@ -19,9 +19,36 @@ header {
 }
 
 .portada {
-  visibility: hidden;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
+.portada-img {
+  background-color: gray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  animation: color-load 1.5s ease-in-out infinite;
+}
+
+@keyframes color-load {
+  0% {
+    background-color: gray;
+  }
+  50% {
+    background-color: rgb(17, 115, 185);
+  }
+  100% {
+    background-color: gray;
+  }
+}
 .carousel {
   padding-top: 70px;
 }

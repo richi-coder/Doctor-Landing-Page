@@ -1,16 +1,15 @@
 $(document).ready(function() {
-  $("#portada").on("load", function() {
-    $(this).removeClass("portada");
-  });
-
-  $("#about-me").on("load", function() {
-    $(".layer-sobremi").fadeOut();
-  });
+  $(".portada").fadeOut();
 
   $(window).on("load", function() {
+    $(".layer-sobremi").fadeOut();
     $(".layer").fadeOut();
     $(".showup").fadeIn();
   });
+
+  $("#last-img").on("load", function() {
+    $(".portada-img").fadeOut();
+  })
 
   $(".navbar-brand").click(function() {
     location.reload();
@@ -23,4 +22,13 @@ $(document).ready(function() {
       $("#ver-mas-loader").addClass("mostrar");
     }, 500);
   });
+
+  $(".nov").on("load", function() {
+    console.log("noviembre")
+  })
+  
+  $("#first-image").on("load", function() {
+    alert("run")
+  })
+
 }); 

@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css"> <!-- Bootstrap folder css-->
     <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script> <!-- Bootstrap folder js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js" defer></script>
+    <script src="app.js" async></script>
     <link rel="preload" as="image" href="media/Doctora_Flores-removebg-preview - Copy.png">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -78,7 +78,8 @@
                     -->
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="media/Doctora_Flores-removebg-preview - Copy.png" class="d-block w-100 portada" alt="Doctora Raquel Ariza" id="portada">
+                        <img src="media/Doctora_Flores-removebg-preview - Copy.png" class="d-block w-100" alt="Doctora Raquel Ariza" id="first-image">
+                        <div class="portada"></div>
                         <div class="hero-text" style="color:white">
                           <h1 class="display-1 fw-bold titling">DRA.<br><span class="fw-bolder">RAQUEL ARIZA</span></h1>
                           <p class="desc">Médico Internista - Directora General de Salud Ambiental</p>
@@ -150,7 +151,7 @@
                   <p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum soluta laudantium in consequuntur quaerat dolorem autem eveniet tempora. Magni dolores odio mollitia illo ex quis! Autem, deleniti, illo quo molestiae tempora, in dolore iusto voluptatibus voluptates eligendi odit repudiandae sint animi necessitatibus consequatur omnis. Reiciendis dicta provident numquam rerum?</p>
                 </div>
                 <div class="col-lg-6">
-                  <img src="https://demo.joomshaper.com/2016/doctor/images/2016/09/09/home-doctor.png" class="img-fluid" alt="" loading="lazy"  id="about-me">
+                  <img src="https://demo.joomshaper.com/2016/doctor/images/2016/09/09/home-doctor.png" class="img-fluid" alt="" id="about-me">
                 </div>
               </div>
             </div>
@@ -164,14 +165,15 @@
               <div class="row">
                   <!-- /----/ FIRST-->
                   <div class="col-md-4">
-                    <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
+                    <div class="card showup" style="width: 18rem;">
+                      <a href="http://corposaludtachira.gob.ve/?p=5646" target="_blank"><img src="media/Doctora-Raquel-Ariza-Autoexamen-Corposalud-Prevencion-Cancer.jpeg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy" style="background:white;" id="last-img"><div class="portada-img"></div></a>
                       <div class="card-body">
                         <h5 class="card-title">Consulta de mama</h5>
                         <p class="card-text">Corposalud invita a las mujeres a realizarse examen de la autoexploración mamaria.</p>
                         <a href="http://corposaludtachira.gob.ve/?p=5646" class="btn btn-primary" target="_blank">Ver artículo</a>
                       </div>
                     </div>
+                    <!--
                     <div class="card layer" aria-hidden="true">
                       <img class="card-img-top" style="background-color: gray;">
                       <div class="card-body">
@@ -188,17 +190,19 @@
                         <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                       </div>
                     </div>
+                    -->
                   </div>
                   <!-- /----/SECOND-->
                   <div class="col-md-4">
-                    <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD" loading="lazy"></a>
+                    <div class="card showup" style="width: 18rem;">
+                      <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" target="_blank"><img src="media/Doctora-Raquel-Ariza-Toma-Citologia-Deteccion-Cancer-Uterino.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Toma de Citología CORPOSALUDAD" loading="lazy"><div class="portada-img"></div></a>
                       <div class="card-body">
                         <h5 class="card-title">Toma de citología</h5>
                         <p class="card-text">Promueven la toma de citología para la detección precoz del cáncer de cuello uterino.</p>
                         <a href="http://www.tachira.gob.ve/2014/09/15/promueven-la-toma-de-citologia-para-la-deteccion-precoz-del-cancer-de-cuello-uterino/" class="btn btn-primary" target="_blank">Ver artículo</a>
                       </div>
                     </div>
+                    <!--
                     <div class="card layer" aria-hidden="true">
                       <img class="card-img-top" style="background-color: gray;">
                       <div class="card-body">
@@ -215,17 +219,19 @@
                         <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                       </div>
                     </div>
+                    -->
                   </div>
                   <!-- /----/THIRD-->
                   <div class="col-md-4">
-                    <div class="card showup" style="width: 18rem; display: none;">
-                      <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" target="_blank"><img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?resize=696%2C463&ssl=1" class="card-img-top picture" alt="Doctora Raquel Ariza Reactivos Jornadas Despistaje Cancer" loading="lazy"></a>
+                    <div class="card showup" style="width: 18rem;">
+                      <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" target="_blank"><img src="https://i0.wp.com/lanacionweb.com//fotoedicion/2022/09/blanco-.jpg?resize=696%2C463&ssl=1" class="card-img-top picture" alt="Doctora Raquel Ariza Reactivos Jornadas Despistaje Cancer" loading="lazy"><div class="portada-img"></div></a>
                       <div class="card-body">
                         <h5 class="card-title">No hay reactivos ni kit de espéculos para jornadas de despistaje de cáncer</h5>
                         <p class="card-text">En el estado Táchira se cuenta con programas que ayudan al pacientes a prevenir y tratar el cáncer, en sus distintos estadíos.</p>
                         <a href="https://lanacionweb.com/regional/no-hay-reactivos-ni-kit-de-especulos-para-jornadas-de-despistaje-de-cancer/" class="btn btn-primary" target="_blank">Ver artículo</a>
                       </div>
                     </div>
+                    <!--
                     <div class="card layer" aria-hidden="true">
                       <img class="card-img-top" style="background-color: gray;">
                       <div class="card-body">
@@ -242,6 +248,7 @@
                         <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                       </div>
                     </div>
+                    -->
                   </div>
                   <!-- /----/-->
               </div>
@@ -254,14 +261,15 @@
               <div class="row">
                 <!-- /----/FOURTH-->
                 <div class="col-md-4">
-                  <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="http://corposaludtachira.gob.ve/?p=4462" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/03/FO-30MAR2018-Raquel-Ariza-prevenci%C3%B3n-del-c%C3%A1ncer-de-colon-2-1-1024x576.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
+                  <div class="card showup" style="width: 18rem;">
+                    <a href="http://corposaludtachira.gob.ve/?p=4462" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/03/FO-30MAR2018-Raquel-Ariza-prevenci%C3%B3n-del-c%C3%A1ncer-de-colon-2-1-1024x576.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"><div class="portada-img"></div></a>
                     <div class="card-body">
                       <h5 class="card-title">“Evitar una vida sedentaria y adquirir buenos hábitos alimenticios contribuyen a la prevención del cáncer de colon”</h5>
                       <p class="card-text">... Raquel Ariza, adjunta al programa de Control y Prevención de Cáncer de la Corporación de Salud del Estado, aprovechó la oportunidad para hacer un llamado a la prevención de esta enfermedad a partir de las mejoras en los hábitos alimenticios, ingesta de agua adecuada, evitar el estreñimiento, y hacer ejercicios.</p>
                       <a href="http://corposaludtachira.gob.ve/?p=4462" class="btn btn-primary" target="_blank">Ver artículo</a>
                     </div>
                   </div>
+                  <!--
                   <div class="card layer" aria-hidden="true">
                     <img class="card-img-top" style="background-color: gray;">
                     <div class="card-body">
@@ -278,17 +286,19 @@
                       <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                     </div>
                   </div>
+                  -->
                 </div>
                 <!-- /----/FIFTH-->
                 <div class="col-md-4">
-                  <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="http://corposaludtachira.gob.ve/?p=4838" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/05/FO-17May2018-Dr-Luis-Ramirez-Presidente-de-Corposalud-Con-botones-y-reconocimientos-Corposalud-realza-labor-de-los-enfermeros-Corposalud-3.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
+                  <div class="card showup" style="width: 18rem;">
+                    <a href="http://corposaludtachira.gob.ve/?p=4838" target="_blank"><img src="http://corposaludtachira.gob.ve/wp-content/uploads/2018/05/FO-17May2018-Dr-Luis-Ramirez-Presidente-de-Corposalud-Con-botones-y-reconocimientos-Corposalud-realza-labor-de-los-enfermeros-Corposalud-3.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"><div class="portada-img"></div></a>
                     <div class="card-body">
                       <h5 class="card-title">Con botones y reconocimientos Corposalud realza labor de los enfermeros</h5>
                       <p class="card-text">El acto estuvo presidido por el Presidente de Corposalud, doctor Luís Ramírez, en compañía de David Omaña  y Raquel Ariza, director principal y jefe de Salud colectiva y redes, Yraima Guerrero, coordinadora regional de enfermería y Daniel Lizcano, presidente del Colegio de Enfermeros del Táchira.</p>
                       <a href="http://corposaludtachira.gob.ve/?p=4838" class="btn btn-primary" target="_blank">Ver artículo</a>
                     </div>
                   </div>
+                  <!--
                   <div class="card layer" aria-hidden="true">
                     <img class="card-img-top" style="background-color: gray;">
                     <div class="card-body">
@@ -305,17 +315,19 @@
                       <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                     </div>
                   </div>
+                  -->
                 </div>
                 <!-- /----/SIXTH-->
                 <div class="col-md-4">
-                  <div class="card showup" style="width: 18rem; display: none;">
-                    <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" target="_blank"><img src="https://diariodelosandes.com/site/wp-content/uploads/2018/12/FO07DIC2018Corposalud-recibio-gran-dotaci%C3%B3n-de-medicamentos-640x480.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"></a>
+                  <div class="card showup" style="width: 18rem;">
+                    <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" target="_blank"><img src="https://diariodelosandes.com/site/wp-content/uploads/2018/12/FO07DIC2018Corposalud-recibio-gran-dotaci%C3%B3n-de-medicamentos-640x480.jpg" class="card-img-top picture" alt="Doctora Raquel Ariza Corposalud" loading="lazy"><div class="portada-img"></div></a>
                     <div class="card-body">
                       <h5 class="card-title">Programas de Corposalud recibieron dotación de medicamentos por parte de MPPS</h5>
                       <p class="card-text">La doctora Raquel Ariza, jefe de Salud Colectiva y Redes de Corposalud declaró sentirse satisfecha por esta gran dotación de medicamentos, que serán distribuidos de la mejor manera entre los pacientes que lo necesitan “ya que es vital para la vida de ellos”.</p>
                       <a href="https://diariodelosandes.com/site/programas-de-corposalud-recibieron-dotacion-de-medicamentos-por-parte-de-mpps/" class="btn btn-primary" target="_blank">Ver artículo</a>
                     </div>
                   </div>
+                  <!--
                   <div class="card layer" aria-hidden="true">
                     <img class="card-img-top" style="background-color: gray;">
                     <div class="card-body">
@@ -332,6 +344,7 @@
                       <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
                     </div>
                   </div>
+                  -->
                 </div>
               </div>
                 <!-- /----/-->
@@ -341,7 +354,7 @@
             <h2 class="display-1">Jornadas</h2>
             <p class="lead text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ratione velit placeat iusto explicabo necessitatibus, eum voluptate hic quae sed molestiae, quasi iure aliquid facere voluptatem culpa. Libero ad accusamus, fuga, numquam quae quo voluptate fugit consequatur incidunt tempore minima.</p>
             <p class="text-center display-4 fw-normal">PRÓXIMAS <span class="fw-bold">JORNADAS</span></p>
-            <img src="media/NOVIEMBRE.png" class="img-fluid" alt="" style="padding: 5vw 10vw 10vw" loading="lazy">
+            <img src="media/NOVIEMBRE.png" class="img-fluid nov" alt="" style="padding: 5vw 10vw 10vw;" loading="lazy">
           </div>   
         </main>
     <!--
