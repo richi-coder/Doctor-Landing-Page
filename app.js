@@ -49,6 +49,7 @@ document.fonts.ready.then(() => {
     $(document.body).removeAttr("style");
     $(".nav-link").removeClass("disabled");
     $(".loading-bar").fadeOut();
+    $("#inicio").addClass("carousel");
     setTimeout(() => {
       document.getElementById("second-image").src = "https://img.freepik.com/foto-gratis/doctora-vistiendo-bata-laboratorio-estetoscopio-aislado_1303-29797.jpg?w=2000";
     }, 2000);
